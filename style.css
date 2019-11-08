@@ -1,0 +1,102 @@
+/* color palette
+#ff7c65 - light orange;
+#282b34 - black;
+*/
+
+/* GLOBAL STYLES */
+/*box model fix - shrinks content box and not increase overall size when adding padding and margins */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+h1 {
+  font-family: Impact, Charcoal, sans-serif;
+  font-size: 4em;
+  margin-bottom: 20px;
+}
+h2 {
+  font-family: Impact, Charcoal, sans-serif;
+  margin-top: 0;
+  font-size: 2em;
+}
+h3 {
+  font-family: Charcoal, sans-serif;
+}
+
+.content-wrap {
+  max-width: 950px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+body {
+  margin: 0;
+}
+
+a {
+  color: #ff7c65;
+}
+a:hover {
+  text-decoration: none;
+}
+
+hr {
+border: 1px solid black;
+background-color: #282b34;
+}
+/* HEADER/FOOTER */
+
+header, footer {
+  background: #282b34;
+  color: #ff7c65;
+  text-align: center;
+}
+
+body {
+  background: #282b34;
+}
+
+.content-info a {
+  padding: 10px;
+  margin: 10px;
+  display: inline-block;
+}
+
+.fa {
+  padding: 10px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+
+  border-radius: 50%;
+}
+/* SECTIONS */
+
+.work {
+  background: #ff7c65;
+  color: #282b34;
+}
+
+.education {
+  background: #ff7c65;
+  color: #282b34;
+}
+
+.work a {
+  color: #282b34;
+}
+.col-left {
+  width: 30%;
+  float: left;
+  min-height: 200px;
+}
+
+.col-right {
+  width: 70%;
+  float: left;
+  min-height: 200px; /* min-height ensures text does not overlap if one section is bigger than the other */
+}
